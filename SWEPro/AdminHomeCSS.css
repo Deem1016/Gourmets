@@ -1,0 +1,497 @@
+@import url('https://fonts.google.com/specimen/Montserrat');
+.images {
+    width: 250px;
+    height: 210px;
+    max-width: 100%;
+    
+}
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', serif;
+}
+
+:root {
+    --primary-color: #f5f5f5;
+     --secondary-color: #fff;
+     --font-color: #292929;
+     --shadow: rgb(204, 204, 204);
+     --shadow2: rgba(0,0,0,0.08);
+     --footer-bg: #CB322B;
+}
+
+.dark-theme {
+    --primary-color: #393E46;
+    --secondary-color: #222831;
+    --font-color: #fff;
+    --shadow: rgba(0, 0, 0, 0.233);
+    --shadow2: rgba(0, 0, 0, 0.356);
+    --footer-bg: #222831;  
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgb(0, 0, 0, 0.25);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #F2A22C;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #F2A22C;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden !important;
+    font-family: 'Droid Arabic Kufi', serif;
+    background-color: var(--primary-color);
+}
+
+
+.container{
+    max-width:1200px;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+/* NAVBAR -----------------------------------*/
+.logo {
+    width: 75px;
+    height: 75px;
+    flex: 1 1 auto;
+    margin-left: 5%;
+}
+
+.logo img{
+    width: 75px;
+    height: 75px;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+}
+
+.nav {
+display: flex;
+justify-content:right ;
+list-style: none;
+}
+
+
+.nav a {
+    transition: .3s;
+    margin: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--font-color);
+    
+}
+
+.nav li :hover {
+    transition: .2s;
+    font-size: 19px;
+    color: #CB322B;
+}
+
+/* Button Dark/Light ----------*/
+#anonymous {
+    width: 25px;
+    cursor: pointer;
+    margin-right: 5%;
+}
+
+/* Hamburger Icon----------*/
+.btn-bars .icon1,.icon2,.icon3{
+    width:30px;
+    height:5px;
+    color:#fff;
+    background-color:#CB322B;
+    display:block;
+    margin:5px 0;
+   transition:all .5s ease-in-out;
+}
+
+.btn-bars{
+    display:none;
+}
+
+#check{
+    display:none;
+}
+
+/* HomePage Style */
+.banner-area {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner .text-area {
+    position: relative;
+    max-width: 500px;
+    margin-left: 90px;
+}
+
+@keyframes load {
+    0% {
+    transform: translateY(-50px);
+    opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+.social {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+}
+
+.social li a:hover{
+    transform: scale(1);
+}
+
+
+/* ABOUT AREA ------------------------------------*/
+
+
+.about-area {
+    text-align: center;
+    width: 100vw;
+    height: 110vh;
+    background: #CB322B;
+    color: var(--secondary-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.about-area svg {
+    display: block;
+
+}
+
+.about-area #chngcolor {
+    fill: var(--primary-color);
+}
+
+.curvedUpper {
+    background: var(--primary-color);
+}
+
+.about-area h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.about-area p {
+text-align: center;
+font-size:1.3em;
+margin: 0 15rem 0 15rem;
+}
+
+/* WEBSITE SERVICES -----------------------------*/
+.servicecard{
+    margin-bottom: 5%;
+}
+
+.servicecard .underline {
+    height: 5px;
+    max-width: 260px;
+    background-color: #F2A22C;
+    /* margin: 5px 6rem  2rem; no dont use this */
+    margin:auto;
+}
+
+.servicecardtitle {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.servicecardtitle h1 {
+    color: var(--font-color);
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0px;
+}
+.servicecard a {
+    text-decoration: none;
+}
+
+.sbox-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 30px;
+    box-shadow: 0.5px 0.5px 20px var(--shadow);
+}
+
+.s-box #img0 {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    max-width: 100%;
+}
+
+.s-box #img1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    max-width: 100%;
+}
+
+.s-box #img2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    max-width: 100%;
+}
+
+.s-box h2{
+    color: var(--font-color);
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    margin-top: 4%;
+}
+.s-box p{
+    color: var(--font-color);
+    text-align: center;
+}
+.readmorebtn {
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #F2A22C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F2A22C;
+    margin-top: 10px;
+}
+.s-box:hover{
+    box-shadow: 2px 2px 30px var(--shadow2);
+    transition: all ease 0.3s;
+    transform: scale(1.1);
+    background-color: rgb(240, 240, 240);
+}
+.readmorebtn:hover {
+    background-color: #F2A22C;
+    color: #fff;
+    border: 1px solid ;
+    transition: all ease 0.3s;
+    border-color: #4fb660;
+}
+
+/* LOCATION -----------------------------*/
+iframe {
+    border:0;
+    width:600px; 
+    height:400px;
+}
+
+.location-area {
+    max-width:1200px;
+    margin:auto;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.location {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.location .text-part {
+    max-width: 500px;
+    margin:auto;
+}
+
+.location .text-part h1 {
+    color: var(--font-color);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: auto;
+}
+.location .text-part p {
+    text-align: center;
+    padding:20px;
+    color: var(--font-color);
+}
+
+.location .underline {
+    height: 5px;
+    max-width: 260px;
+    background-color: #F2A22C;
+    /* margin: 0px 6rem  2rem; */
+    margin:auto;
+}
+
+.location .illustration img {
+    width: 400px;
+    height: 400px;
+}
+
+/* FOOTER --------------------------------*/
+footer {
+    position: relative;
+    width: 100%;
+    background-color: var(--footer-bg);
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .social_icon, 
+footer .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social_icon li,
+footer .menu li {
+    list-style: none;
+}
+
+footer .social_icon li a {
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.social .twi,
+.social_icon .twi {
+    width: 50px;
+    height: 50px;
+}
+
+.social_icon img,
+.social img {
+    width: 40px;
+    height: 40px;
+}
+
+footer .social_icon li a:hover {
+    transform: translateY(-10px);
+}
+
+footer .menu li a {
+    font-size: 1.3em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 1;
+}
+
+footer .menu li a:hover {
+    opacity: 0.80;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.up{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    color: #F2A22C;
+    font-size: 50px;
+    bottom: 40px;
+    right: 30px;
+    text-decoration: none;
+    background-color:var(--primary-color);
+    border-radius: 100%;
+    text-align: center;
+    line-height: 50px;
+    transition: 0.2s;
+}
+.up:hover{
+    position: fixed;
+    transform: scale(1.2);
+    color: #F2A22C;
+    transition: 0.2s;
+} 
+
+
