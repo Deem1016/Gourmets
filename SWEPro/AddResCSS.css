@@ -1,4 +1,4 @@
-
+#newww
 html{
     background-color: #f8f8f8;
 }
@@ -37,16 +37,6 @@ label{
   }
   #deem-text{
       padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    border-radius: 5px;
-  }
-  
-  #deem-text2{
-    padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
